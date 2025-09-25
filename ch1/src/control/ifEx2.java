@@ -29,7 +29,7 @@ public class ifEx2 {
 
         if (jumsu >= 90) {
             grade = 'A';
-        } else if (jumsu > -80) {
+        } else if (jumsu > 80) {
             grade = 'B';
         } else if (jumsu >= 70) {
             grade = 'C';
@@ -38,5 +38,18 @@ public class ifEx2 {
 
         }
         System.out.println("등급 : " + grade);
+
+        switch (jumsu / 10) {
+            case 10:
+                case9: grade = 'A';
+                break;
+            case 8:
+                grade = 'B';
+            case 7:
+                grade = 'C';
+            default:
+                grade = 'D';
+                break;
+        }
     }
 }

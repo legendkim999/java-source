@@ -21,11 +21,14 @@ public class SwitchEx1 {
         } else if (month == 9 || month == 10 || month == 11) {
             System.out.println("현재 계절은 가을 입니다");
         } else if (month == 12 || month == 1 || month == 2) {
-            System.out.println("현재 계절은 겨울입니다");
+            System.out.println("현재 계절은 겨울 입니다");
         } else {
             System.out.println("월을 확인해 주세요");
         }
 
+        // 조건식을 계산한다. => 조건식과 일치하는 case 문으로 이동 => 문장 수행 => break나
+        // switch 구문의 끝을 만나면 switch 문 빠져나감
+        // 조건식 결과는 정수, 문자열만 가능
         switch (month) {
             case 3:
             case 4:
